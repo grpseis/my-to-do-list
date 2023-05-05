@@ -2,28 +2,20 @@ body {
   font-family: sans-serif;
 }
 
-
 .App {
   text-align: center;
-  background: #209cee;
+  background: #6bc736;
   height: 100vh;
   padding: 30px;
-}
-
-
-
-.todolist {
-  background: #BEFF55;
-  border-radius: 4px;
-  max-width: 400px;
-  padding: 5px;
 }
 
 .todo {
   align-items: center;
   background: #fff;
+  border: #6bc736;
   border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  border-style: double;
+  box-shadow: 1px 1px 1px rgba(133, 7, 7, 0.15);
   display: flex;
   font-size: 18px;
   justify-content: space-between;
@@ -31,37 +23,23 @@ body {
   padding: 3px 10px;
 }
 
-.todoadd {
-  align-items: center;
-}
-
-.form label {
-  color: #4A5568;
-  display: block;
-  font-style: normal;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
-  margin-bottom: 11px;
-  width: 100%;
-}
-
 .input {
-  border: 1px solid #E8E8E8;
+  border: 1px solid #6bc736;
   border-radius: 5px;
   box-sizing: border-box;
-  color: #2D3748;
+  color: #11150c;
   line-height: 16px;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 11px;
+
   padding: 17px 20px 17px 20px;
   width: 100%;
 }
 
 .button {
-  background: #1DA1F2;
+  background: #6bc736;
   border: none;
   color: #FFFFFF;
   cursor: pointer;
@@ -73,5 +51,13 @@ body {
   padding-top: 15px;
   padding-bottom: 16px;
   text-align: center;
+  width: 20%;
+}
+
+.right {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
+

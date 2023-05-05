@@ -22,21 +22,17 @@ function TodoForm({ addTodo }) {
 
   return (
       <form onSubmit={handleSubmit}>
-        <p>
-        <label className="form label">Nueva pendiente..</label>
-        <input
+        <p className="right">
+            <input
             type="text"
             className="input"
-            placeholder="Nueva pendiente.."
+
+            placeholder="Nuevo pendiente.."
             value={value}
             onChange={e => setValue(e.target.value)}
-        />
+            />
+            <button className="button" onClick={() => addTodo(value)}>Adicionar pendiente</button>
         </p>
-        <div>
-          <button className="button" onClick={() => addTodo(value)}>Adicionar pendiente</button>
-        </div>
-
-
       </form>
   );
 }
@@ -72,7 +68,7 @@ function App() {
 
   return (
       <div className="app">
-        <div className="todo-list">
+        <div>
           <TodoForm addTodo={addTodo} />
           {todos.map((todo, index) => (
               <Todo

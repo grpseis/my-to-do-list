@@ -1,12 +1,55 @@
+.image{
+    display: flex;
+    width: 200px;
+    height: 200px;
+
+}
+
+.grande{
+    display: flex;
+
+
+}
+
+.left {
+    background: #ffffff;
+    height: 100vh;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.right {
+    align-items: start;
+
+    justify-content: left;
+
+    float:right;
+}
+
+.right div {
+    width: 350px;
+}
 
  .title {
-   color: #1b4b9f;
-   font-size: 22px;
-   font-weight: 400;
+   color: #6bc736;
+   font-size: 44px;
+   font-weight: bold;
+
    line-height: 19px;
    margin-bottom: 2px;
+   text-align: center;
  }
 
+
+
  .foot {
-     color: #1b4b9f;
+     color: #6bc736;
+     display: flex;
+     text-align: justify-all;
+     align-items: flex-end;
+     width: 100%;
  }
