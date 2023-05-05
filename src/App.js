@@ -26,7 +26,6 @@ function TodoForm({ addTodo }) {
             <input
             type="text"
             className="input"
-
             placeholder="Nuevo pendiente.."
             value={value}
             onChange={e => setValue(e.target.value)}
@@ -39,18 +38,7 @@ function TodoForm({ addTodo }) {
 
 function App() {
   const [todos, setTodos] = React.useState([
-    {
-      id: 1,
-      text: "Mi Primera tarea."
-    },
-    {
-      id: 2,
-      text: "Clase virtual a las 6:00pm"
-    },
-    {
-      id: 3,
-      text: "Realizar las actividades pendientes"
-    }
+
   ]);
 
   const addTodo = text => {

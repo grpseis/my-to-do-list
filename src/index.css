@@ -1,33 +1,26 @@
 .image{
     display: flex;
-    width: 200px;
     height: 200px;
-
+    width: 200px;
 }
 
 .grande{
     display: flex;
-
-
 }
 
 .left {
-    background: #ffffff;
-
-    width: 200px;
-    height: 200px;
-    display: flex;
     align-items: center;
+    background: #ffffff;
+    display: flex;
+    height: 200px;
     justify-content: center;
-
+    width: 200px;
 }
 
 .right {
     align-items: start;
-
-    justify-content: left;
-
     float:right;
+    justify-content: left;
 }
 
 .right div {
@@ -38,18 +31,15 @@
    color: #6bc736;
    font-size: 44px;
    font-weight: bold;
-
    line-height: 19px;
    margin-bottom: 2px;
    text-align: center;
  }
 
-
-
  .foot {
      color: #6bc736;
      display: flex;
-     text-align: justify-all;
-     align-items: flex-end;
+     text-align: center;
+     align-items: center;
      width: 100%;
  }
