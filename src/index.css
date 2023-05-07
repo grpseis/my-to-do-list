@@ -23,9 +23,7 @@
     justify-content: left;
 }
 
-.right div {
-    width: 350px;
-}
+
 
  .title {
    color: #6bc736;
@@ -37,9 +35,9 @@
  }
 
  .foot {
+     align-items: center;
      color: #6bc736;
      display: flex;
      text-align: center;
-     align-items: center;
      width: 100%;
  }

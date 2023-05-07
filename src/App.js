@@ -1,6 +1,13 @@
 import React from "react";
 import "./App.css";
 
+const Footer = () =>
+    <footer>
+        <section className="foot">
+            <h3 className="foot">Uninorte - Desarrollo web FrontEnd</h3>
+        </section>
+    </footer>
+
 function Todo({ todo, index,  removeTodo }) {
   return (
       <div className="todo">
@@ -12,7 +19,7 @@ function Todo({ todo, index,  removeTodo }) {
   );
 }
 
-function TodoForm({ addTodo }) {
+function PrincipalForm({ addTodo }) {
   const [value, setValue] = React.useState("");
 
   const handleSubmit = e => {
@@ -37,9 +44,11 @@ function TodoForm({ addTodo }) {
 }
 
 function App() {
+
   const [todos, setTodos] = React.useState([
 
   ]);
+
 
   const addTodo = text => {
     const newTodos = [...todos, { text }];
@@ -55,9 +64,10 @@ function App() {
   };
 
   return (
+
       <div className="app">
         <div>
-          <TodoForm addTodo={addTodo} />
+          <PrincipalForm addTodo={addTodo} />
           {todos.map((todo, index) => (
               <Todo
                   key={index}
@@ -68,6 +78,7 @@ function App() {
           ))}
 
         </div>
+          <Footer/>
       </div>
   );
 }
