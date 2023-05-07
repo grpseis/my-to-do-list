@@ -1,6 +1,19 @@
 import React from "react";
 import "./App.css";
+import imgHead from "./Assets/images/checkmark.png"
 
+
+const Header = () =>
+    <header>
+        <div className="grande">
+            <div className="left">
+                <img className="image" src={imgHead} alt="imagen encabezado"/>
+            </div>
+            <div className="right">
+                <h1 className="title">Pendientes</h1>
+            </div>
+        </div>
+    </header>
 const Footer = () =>
     <footer>
         <section className="foot">
@@ -66,6 +79,7 @@ function App() {
   return (
 
       <div className="app">
+          <Header/>
         <div>
           <PrincipalForm addTodo={addTodo} />
           {todos.map((todo, index) => (
